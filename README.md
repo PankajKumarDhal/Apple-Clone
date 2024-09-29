@@ -31,9 +31,8 @@ This project is a clone of the Apple website showcasing some of their key produc
 - **FontAwesome:** Used for icons in the navigation bar.
 
 ### Instructions:
-1. Replace `https://github.com/your-username/apple-themed-page.git` with your actual GitHub repository link.
-2. Replace `https://your-website-link.com` with your actual hosted project link (if hosted on GitHub Pages or another platform). 
-3. Add any screenshots to a `screenshots` folder if you wish to include them in the README.
+1. Replace `https://github.com/PankajKumarDhal/Apple-Clone/tree/master` with your actual GitHub repository link.
+2. Replace `https://apple-clone-five-ebon.vercel.app/` with your actual hosted project link (if hosted on GitHub Pages or another platform). 
 
 This `README.md` file provides a comprehensive overview of your project, including features, technologies, instructions, and a live link.
 
@@ -43,4 +42,4 @@ This `README.md` file provides a comprehensive overview of your project, includi
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/apple-themed-page.git
+   git clone https://github.com/PankajKumarDhal/Apple-Clone.git
