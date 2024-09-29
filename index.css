@@ -1,0 +1,688 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-size: 0.88rem;
+    color: rgb(107, 107, 107);
+    letter-spacing: 1.1px;
+    
+}
+h2{
+    color: white;
+    font-size: 56px;
+}
+h3{
+    color: white;
+    font-size: 28px;
+    font-weight: lighter;
+}
+a{
+    color: #498ee9e8;
+    font-size: 18px;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline !important;
+}
+
+nav{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    background-color:rgba(0,0,0,0.9);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+ul{
+    width: 80vw;
+    list-style: none;
+    display: flex;
+    
+}
+nav ul li{
+    padding: 0.7rem;
+    margin: auto;
+    color: rgb(199, 199, 199) !important;
+}
+nav ul li i{
+    color: rgb(199, 199, 199) !important;
+}
+nav ul li:not(:nth-child(1)){
+    font-size: 0.87rem;
+}
+nav ul li:nth-child(1) i, nav ul li:nth-child(9) i, nav ul li:nth-child(10) i{
+    font-size: 20px !important;
+    
+}
+nav ul li:hover,nav ul li i:hover{
+    color: white !important;
+}
+.covid_bar{
+    margin-top: 2.7rem;
+    padding: 0.85rem;
+    background-color: #3b3d3fe8;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.covid_bar a{
+    color: rgb(255, 255, 255);
+    font-size: small;
+}
+.covid_bar p{
+    color: rgb(99, 89, 247);
+    font-size: 1rem;
+}
+.covid_bar a:hover{
+    text-decoration: underline;
+}
+.small_nav_info{
+    padding: 0.85rem;
+    text-align: center;
+}
+.small_nav_info a{
+    color: #006effe8;
+    font-size: small;
+}
+.hero_container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+    background-image: url("https://www.apple.com/v/home/bs/images/heroes/iphone-16-pro/hero_iphone16pro_avail__fnf0f9x70jiy_small.jpg");
+    background-position: center;
+    background-size: cover;  /* Ensures the image covers the entire area */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+.hero_container1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+    background-image: url("https://www.apple.com/in/home/heroes/iphone-16/images/hero_iphone16_avail__euwzls69btea_small.jpg");
+    background-position: center;
+    background-size: cover;  /* Ensures the image covers the entire area */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+.hero_container2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+    background-image: url("https://www.apple.com/v/home/br/images/heroes/apple-watch-series-10/hero_apple_watch_series_10_avail_lte__esu66gaw6dci_large.jpg");
+    background-position: center;
+    background-size: cover;  /* Ensures the image covers the entire area */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.hero_head {
+    font-weight: bold;
+    z-index: 1;
+    width: 50%;
+    height: 20vh;
+    margin: 2.8rem auto 0;
+    text-align: center;
+}
+
+.hero_head h3 {
+    margin-bottom: 1rem;
+}
+
+.hero_order_info {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 13rem;
+    
+}
+.hero_card button{
+    display: flex;
+    color: white;
+    font-size: 18px;
+    size: 2rem;
+    background-color: blue;
+    border-radius: 30px;
+    padding: 0.9em;
+}
+.hero_card .btns{
+    display: flex;
+    color: rgb(51, 32, 224);
+    font-size: 18px;
+    size: 2rem;
+    border-radius: 30px;
+    padding: 0.9em;
+    background-color:transparent;
+    border-color: blue;
+    
+}
+.hero_card .btns:hover{
+    background-color: blue;
+        color: white;
+    }
+.hero_card {
+    display: flex;
+    gap: 3rem;
+    padding: 1rem;
+}
+.margin{
+    margin: 1rem;
+}
+.hero_head2 {
+    font-weight: bold;
+    z-index: 1;
+    width: 50%;
+    height: 20vh;
+    margin: 2.8rem auto 0;
+    text-align: center;
+}
+.hero_head2 h2 {
+    color: black;
+
+}
+.hero_head2 h3 {
+    color: black;
+
+}
+.hero_head2 button{
+    color: white;
+    font-size: 18px;
+    size: 2rem;
+    background-color: blue;
+    border-radius: 30px;
+    padding: 0.9em;
+}
+.hero_head2 .btns{
+    color: rgb(21, 6, 151);
+    /* font-size: 18px; */
+    size: 2rem;
+    border-radius: 30px;
+    padding: 0.9em;
+    background-color:transparent;
+    border-color: blue;
+
+}
+.hero_head2 .btns:hover{
+background-color: blue;
+    color: white;
+}
+.hero_head2 .hero_card2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    padding: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero_head {
+        width: 80%;
+        height: auto;
+    }
+
+    .hero_head h2 {
+        font-size: 36px;
+    }
+
+    .hero_head h3 {
+        font-size: 20px;
+    }
+
+    .hero_img {
+        height: 30vh;
+    }
+
+    .hero_order_info {
+        width: 80%;
+    }
+
+    .hero_card {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero_head {
+        width: 90%;
+        height: auto;
+        margin-top: 4rem;
+    }
+
+    .hero_img {
+        height: 25vh;
+    }
+
+    .hero_order_info {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero_card {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+.section2{
+    padding: 2rem 0;
+    height: 140vh;
+    background-color: #fbfbfd;
+}
+.section2 .hero_head_2{
+    z-index: 1;
+    height: fit-content;
+}
+.hero_head_2 h2,.hero_head_2 h3{
+    color: black;
+}
+.section2 .hero_img{
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.section2 .hero_img .img{
+    width: 100%;
+    height: 100%;
+    transform: scale(2);
+    background-image: url("https://www.apple.com/in/home/heroes/iphone-16/images/hero_iphone16_avail__euwzls69btea_small.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.section2 .hero_order_info{
+    width: 44%;
+    margin-bottom: 4rem;
+}
+.section2 .hero_order_info .hero_card{
+    margin-top: 4rem;
+    text-align: center;
+}
+.section2 .hero_order_info .hero_card h4{
+    color: black;
+}
+/* ------------section4---------- */
+.section_4{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 90vh 90vh 90vh;
+    grid-gap: 1%;
+}
+.item_component{
+    height: 100%;
+    background-color: #fbfbfd;
+    display: flex;
+    flex-direction: column;
+    
+}
+.item_component2{
+    height: 100%;
+   
+    background-image: url("https://www.apple.com/v/home/br/images/promos/airpods-4/promo_airpods_4_avail__bl22kvpg6ez6_medium.jpg");
+    transform: scale(1);
+    background-size: cover;
+    background-position: center;
+    
+}
+.comp_style_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25rem;
+
+
+}
+.comp_style_2 p{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.item_component3{
+    height: 100%;
+    background-color: #fbfbfd;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://www.apple.com/v/home/br/images/promos/airpods-max/promo_airpodsmax_announce__2srayzjz3iay_medium.jpg");
+    transform: scale(1);
+    background-size: cover;
+    background-position: center;
+    
+}
+.comp_style_3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25rem;
+
+
+}
+.comp_style_3 p{
+    color: rgb(19, 17, 17);
+    font-size: 25px;
+    text-align: center;
+}
+.comp_style_3 h2{
+    color: rgb(19, 17, 17);
+    font-size: 3rem;
+    text-align: center;
+    width: bold;
+}
+.item_component4{
+    height: 100%;
+    background-color: #fbfbfd;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://www.apple.com/v/home/br/images/promos/macbook-air-m3/promo_macbook_air_m3__e43jegok3wuq_medium.jpg");
+    transform: scale(1);
+    background-size: cover;
+    background-position: center;
+    
+}
+.comp_style_4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+
+}
+.comp_style_4 p{
+    color: rgb(19, 17, 17);
+    font-size: 25px;
+    text-align: center;
+}
+.comp_style_4 h2{
+    color: rgb(19, 17, 17);
+    font-size: 3rem;
+    text-align: center;
+    width: bold;
+}
+.item_component5{
+    height: 100%;
+    background-color: #fbfbfd;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://www.apple.com/v/home/br/images/promos/ipad-pro/promo_ipadpro__ch217v9v7no2_medium.jpg");
+    transform: scale(1);
+    background-size: cover;
+    background-position: center;
+    
+}
+.item_component6{
+    height: 100%;
+    background-color: #fbfbfd;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://www.apple.com/v/home/br/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_medium.jpg");
+    transform: scale(1);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.comp_style_1{
+    height: 40%;
+    margin: 2rem auto 0;
+    text-align: center;
+}
+.comp_style_1 p{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 1rem;
+}
+.comp_style_1 h2{
+    font-size: 3.4em;
+    color: black;
+    margin-bottom: 1rem;
+}
+.comp_style_1 span a{
+    margin-right: 2.5rem;
+}
+.item_component .img_container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.item_component .img_container .img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.5) translateY(-20%);
+}
+.two{
+    height: 100%;
+    width: 100%;
+    background-image: url("./images/02.jpg");
+    transform: scale(1);
+    background-size: cover;
+    background-position: center;
+
+
+}
+.two p{
+    margin: 1rem 0 1rem ;
+    color: white;
+}
+
+.two .img_container2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.img_container4{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.img_container6{
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+}
+
+.img_container6 .text{
+    text-align: center;
+    position: absolute;
+    bottom: 8%;
+}
+.img_container6 .text p{
+    color: white;
+    font-size: 18px;
+}
+.img_container6 i{
+    font-size: 1.4em;
+    color: rgb(0, 81, 255);
+    margin-top: 1rem;
+}
+.comp_style_1 p{
+    color: white;
+}
+.comp_style_1 h2{
+    color: white;
+}
+/* Large screens (Desktops and laptops) - Width above 1200px */
+@media (max-width: 1200px) {
+    .section_4 {
+        grid-template-columns: 48% 48%; /* Reduce the width of each grid item */
+        grid-template-rows: auto; /* Adjust row height */
+    }
+}
+
+/* Medium screens (Tablets and smaller laptops) - Width between 1024px and 1200px */
+@media (max-width: 1024px) {
+    .section_4 {
+        grid-template-columns: 48% 48%;
+        grid-gap: 2%;
+    }
+
+    .item_component, .item_component2, .item_component3, 
+    .item_component4, .item_component5, .item_component6 {
+        height: auto; /* Allow flexible height */
+    }
+
+    .comp_style_2, .comp_style_3, .comp_style_4 {
+        padding-top: 15rem; /* Adjust padding */
+    }
+
+    .comp_style_2 p, .comp_style_3 p, .comp_style_4 p {
+        font-size: 22px;
+    }
+}
+
+/* Small screens (Mobile phones and small tablets) - Width between 760px and 1024px */
+@media (max-width: 760px) {
+    .section_4 {
+        grid-template-columns: 100%; /* Single column for smaller screens */
+        grid-template-rows: auto; /* Flexible row heights */
+    }
+
+    .item_component, .item_component2, .item_component3, 
+    .item_component4, .item_component5, .item_component6 {
+        height: auto;
+    }
+
+    .comp_style_2, .comp_style_3, .comp_style_4 {
+        padding-top: 10rem;
+    }
+
+    .comp_style_2 p, .comp_style_3 p, .comp_style_4 p {
+        font-size: 18px; /* Smaller text size */
+    }
+}
+
+/* Extra small screens (Mobile phones) - Width below 480px */
+@media (max-width: 480px) {
+    .section_4 {
+        grid-template-columns: 100%; /* Full width for very small screens */
+        grid-template-rows: auto;
+    }
+
+    .comp_style_2, .comp_style_3, .comp_style_4 {
+        padding-top: 8rem; /* Further reduce padding */
+    }
+
+    .comp_style_2 p, .comp_style_3 p, .comp_style_4 p {
+        font-size: 16px; /* Smaller font for mobile */
+    }
+
+    .item_component img, .item_component2 img, .item_component3 img {
+        width: 100%; /* Ensure images fit within the grid */
+    }
+}
+
+
+
+/* ------------"footer" ---------------*/
+footer{
+    height: fit-content;
+    margin-top: 2rem;
+    background-color: whitesmoke;
+    display: flex;
+    padding: 1rem;
+}
+.footer_container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+.footer_container p{
+    font-size: 12px !important;
+    color: rgb(156, 153, 153) !important;
+    margin-bottom: 0.7rem;
+}
+.product_list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+div ol{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+ div ol li{
+    padding: 0.3rem;
+}
+div ol li a{
+
+    color: inherit;
+    font-size: 11px;
+}
+div ol li:nth-child(1){
+    font-weight: bold;
+}
+
+footer p a{
+    font-size: inherit;
+}
+footer p{
+    position: relative;
+}
+footer p span{
+    padding: 0.5rem;
+    font-size: inherit;
+}
+footer p span:last-child{
+    transform: translateX();
+}
+@media (max-width: 760px) {
+    footer {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 2rem 1rem;
+        text-align: center; /* Add more padding for small screens */
+    }
+
+    .footer_container {
+        width: 100%; /* Full width on smaller screens */
+        margin: auto;
+    }
+
+    .product_list {
+        grid-template-columns: 100%; /* Display items in a single column */
+    }
+
+    div ol li a {
+        font-size: 14px; /* Increase font size for better readability on small screens */
+    }
+
+    footer p {
+        font-size: 14px; /* Increase footer text size */
+        text-align: center; /* Center text for a clean mobile layout */
+    }
+
+    footer p span {
+        display: block; /* Ensure spans are stacked vertically */
+        font-size: 13px; /* Adjust font size for mobile */
+        padding: 0.3rem; /* Adjust padding */
+    }
+}
